@@ -7,7 +7,8 @@ Introduction/Project summary
 
 ### Development platform: 
 (OS, Unity Version, Visual Studio Version, used SDKs)
-Scripting Runtime Version: 
+Scripting Runtime Version: .Net 4x Equivalent
+
 StemVR Plugin: Version 2.5.0 (sdk 1.8.19)
 
 ### Target platform: 
