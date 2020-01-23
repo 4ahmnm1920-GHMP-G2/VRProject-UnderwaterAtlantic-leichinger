@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public Material _mat;
+
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class UnderWaterEffect : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+{  
+     private void OnRenderImage(RenderTexture src, RenderTexture dest) 
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-         
+        Graphics.Blit(source,destination,_mat);
     }
 }
