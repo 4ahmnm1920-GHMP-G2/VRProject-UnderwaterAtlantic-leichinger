@@ -264,7 +264,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 2.45
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -310,6 +310,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mat: {fileID: 2100000, guid: 4514936605a69448abbad5f01b3b596f, type: 2}
+  _pixelOffset: 0.00124
+  _noiseScale: 11.36
+  _noiseFrequency: 3.86
+  _noiseSpeed: 3.1
+  _depthSart: 0.5
+  _depthDistance: 0
 --- !u!114 &587909166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mat: {fileID: 2100000, guid: 59325321865964256bf92e5b479c9cd4, type: 2}
   _fogColor: {r: 0.19272871, g: 0.6698113, b: 0.54592794, a: 0}
+  _depthSart: -0.48
+  _depthDistance: 5.52
 --- !u!1001 &1668222956
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@
         _NoiseFrequency ("Noise Frequency", float) = 1
         _NoiseSpeed ("Noise Speed", float) = 1
         _PixelOffset ("Pixel Offset",float) = 0.005
+
+        _DepthSart ("Depth Start", float) = 1
+        _DepthDistance ("Depth Distance", float) = 1
     }
     SubShader
     {
@@ -25,6 +28,8 @@
             #define M_PI 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 
 
             uniform float _NoiseScale, _NoiseFrequency, _NoiseSpeed, _PixelOffset;
+            float _DepthSart, _DepthDistance;
+            sampler2D _CameraDepthTexture;
 
             struct appdata
             {
@@ -52,11 +57,14 @@
 
             fixed4 frag (v2f i) : COLOR
             {
+                float depthValue = Linear01Depth(tex2Dproj(_CameraDepthTexture, UNITY_PROJ_COORD(i.scrPos)).r) * _ProjectionParams.z;
+                depthValue = saturate((depthValue - _DepthSart) / _DepthDistance);
+
                 float3 spos = float3(i.scrPos.x, i.scrPos.y, 0) * _NoiseFrequency;
                 spos.z += _Time.x * _NoiseSpeed;
                 float noise = _NoiseScale * ((snoise(spos) + 1) /2);
                 float4 noiseToDirektion = float4(cos(noise*M_PI*2), sin(noise*M_PI*2),0,0);
-                fixed4 col = tex2Dproj(_MainTex, i.scrPos + (normalize(noiseToDirektion) * _PixelOffset));
+                fixed4 col = tex2Dproj(_MainTex, i.scrPos + (normalize(noiseToDirektion) * _PixelOffset * depthValue));
                 return col;
             }
             ENDCG

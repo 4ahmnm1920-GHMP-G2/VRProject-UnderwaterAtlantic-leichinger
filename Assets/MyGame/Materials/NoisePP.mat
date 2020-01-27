@@ -23,5 +23,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - _DepthDistance: 0
+    - _DepthSart: 0.5
+    - _NoiseFrequency: 3.86
+    - _NoiseScale: 11.36
+    - _NoiseSpeed: 3.1
+    - _PixelOffset: 0.00124
     m_Colors: []
