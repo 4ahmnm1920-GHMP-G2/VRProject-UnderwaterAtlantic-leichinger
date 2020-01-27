@@ -309,11 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 926198456d2514e0e80c526c6cba4940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mat: {fileID: 2100000, guid: 6bfb18d1d01f3433eb662ad7ff0f4e0c, type: 2}
-  _pixelOffset: 0.0032
-  _noiseScale: 0.1
-  _noiseFrequency: 0.1
-  _noiseSpeed: 0.1
+  _mat: {fileID: 2100000, guid: 4514936605a69448abbad5f01b3b596f, type: 2}
 --- !u!114 &587909166
 MonoBehaviour:
   m_ObjectHideFlags: 0
