@@ -806,8 +806,8 @@ MonoBehaviour:
   _noiseScale: 11.1
   _noiseFrequency: 3.49
   _noiseSpeed: 3.12
-  _depthSart: 0
-  _depthDistance: 0
+  _depthSart: 7.27
+  _depthDistance: 7.14
 --- !u!114 &625715951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,8 +822,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mat: {fileID: 2100000, guid: 59325321865964256bf92e5b479c9cd4, type: 2}
   _fogColor: {r: 0.13363299, g: 0.7264151, b: 0.55704874, a: 0}
-  _depthSart: 10.77
-  _depthDistance: 55.28
+  _depthSart: -34.4
+  _depthDistance: 103.39
 --- !u!4 &625746074
 Transform:
   m_ObjectHideFlags: 0
@@ -1016,7 +1016,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625624800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1219,7 +1219,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: 2
+  m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -2013,7 +2013,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2435,7 +2435,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
