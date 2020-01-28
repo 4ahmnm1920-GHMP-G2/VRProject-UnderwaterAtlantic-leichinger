@@ -44,7 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -350,7 +350,7 @@ MonoBehaviour:
       farClipPlaneDistance: 50
       density: 0.25
       anisotropy: 0.5
-      color: {r: 0, g: 0.25, b: 0.2219606, a: 1}
+      color: {r: 0.005830914, g: 0.09242409, b: 0.25, a: 1}
       colorStrength: 1.49
     _computeMaximumDepthComputeShader: {fileID: 7200000, guid: a5d52c8a306e8b746ab60b306575aa3e,
       type: 3}
@@ -828,6 +828,11 @@ PrefabInstance:
       propertyPath: m_OrthographicSize
       value: 74.9
       objectReference: {fileID: 0}
+    - target: {fileID: 119294810216397604, guid: 2c2696c9c6fe94d4d848423763213faa,
+        type: 3}
+      propertyPath: m_IgnoreLayers.m_Bits
+      value: 274
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2696c9c6fe94d4d848423763213faa, type: 3}
 --- !u!1 &555796470
@@ -864,7 +869,7 @@ MonoBehaviour:
   overrideColor: 0
   overridingColor: {r: 0.9999, g: 0.9999, b: 0.9999, a: 0.9999}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 1689986519}
+  shadowMapRenderTexture: {fileID: 590804439}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -944,7 +949,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: -1.3321604e+34, z: -2.3352592e+27, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1039,6 +1044,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572467460}
   m_Mesh: {fileID: 9206704777973295574, guid: afacecc606e784fcead3b3a8bafee98d, type: 3}
+--- !u!84 &590804439
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 3
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 52
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &605437385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,40 +3183,6 @@ RenderTexture:
     m_WrapW: 1
   m_Dimension: 2
   m_VolumeDepth: 1
---- !u!84 &1689986519
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 3
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 52
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1707292332
 GameObject:
   m_ObjectHideFlags: 0
@@ -4596,7 +4601,7 @@ GameObject:
   - component: {fileID: 1492132852155187078}
   - component: {fileID: 4123487458286399602}
   - component: {fileID: 2931190467732372978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4881,7 +4886,7 @@ GameObject:
   - component: {fileID: 3024455263520663897}
   - component: {fileID: 1508527273553309861}
   - component: {fileID: 3894382024883390435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5728,7 +5733,7 @@ GameObject:
   - component: {fileID: 5269293745567505164}
   - component: {fileID: 4857777130230451364}
   - component: {fileID: 2781101563451719409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5823,7 +5828,7 @@ GameObject:
   - component: {fileID: 3240144844165040816}
   - component: {fileID: 2999597410388452651}
   - component: {fileID: 9186753910029765622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6119,7 +6124,7 @@ GameObject:
   - component: {fileID: 7281534405918206217}
   - component: {fileID: 8499532392760640462}
   - component: {fileID: 5548877102351891064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube102
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6877,7 +6882,7 @@ GameObject:
   - component: {fileID: 5728211861801028484}
   - component: {fileID: 7394027306898936041}
   - component: {fileID: 1537428636159100090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface89
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6947,7 +6952,7 @@ GameObject:
   - component: {fileID: 1230756092723594158}
   - component: {fileID: 1448471058787219562}
   - component: {fileID: 3713325745484008776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7193,7 +7198,7 @@ GameObject:
   - component: {fileID: 2958053503526026336}
   - component: {fileID: 8899050067851362596}
   - component: {fileID: 5638944200741590915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7219,7 +7224,7 @@ GameObject:
   - component: {fileID: 4813053023009191106}
   - component: {fileID: 2688418028725943482}
   - component: {fileID: 5688177409612797973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7237,7 +7242,7 @@ GameObject:
   - component: {fileID: 7955852324279861288}
   - component: {fileID: 5280447078730073327}
   - component: {fileID: 2615519478146924704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7478,7 +7483,7 @@ GameObject:
   - component: {fileID: 111568403241843885}
   - component: {fileID: 7847643089348800597}
   - component: {fileID: 1425599464296266198}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface77
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7575,7 +7580,7 @@ GameObject:
   - component: {fileID: 1460076345901804509}
   - component: {fileID: 8931096111721984921}
   - component: {fileID: 3636282455238237879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube116
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7607,7 +7612,7 @@ GameObject:
   - component: {fileID: 5766577661373500458}
   - component: {fileID: 7654643711630141609}
   - component: {fileID: 6130513787721761708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube91
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7651,7 +7656,7 @@ GameObject:
   - component: {fileID: 6865075126048464561}
   - component: {fileID: 2694739692240847413}
   - component: {fileID: 7026444114388476886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7669,7 +7674,7 @@ GameObject:
   - component: {fileID: 1596844647655383911}
   - component: {fileID: 4371743787298661067}
   - component: {fileID: 6237505377803502219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7766,7 +7771,7 @@ GameObject:
   - component: {fileID: 1010419229223732451}
   - component: {fileID: 2935638708938616426}
   - component: {fileID: 2350704752072254394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7851,7 +7856,7 @@ GameObject:
   - component: {fileID: 8040868644555170516}
   - component: {fileID: 8814047220554427671}
   - component: {fileID: 4093562881336471408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube99
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8116,7 +8121,7 @@ GameObject:
   - component: {fileID: 2234461397471219202}
   - component: {fileID: 8098734428942488922}
   - component: {fileID: 1877023853348419016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8278,7 +8283,7 @@ GameObject:
   - component: {fileID: 8442500007469541511}
   - component: {fileID: 6015149785881309139}
   - component: {fileID: 5183194769344278821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8545,7 +8550,7 @@ GameObject:
   - component: {fileID: 4625570037253204433}
   - component: {fileID: 2616861406777655592}
   - component: {fileID: 2182254374316246977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube122
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8600,7 +8605,7 @@ GameObject:
   - component: {fileID: 4975248013070834309}
   - component: {fileID: 878587935640725121}
   - component: {fileID: 5784637851115270720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube121
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8691,7 +8696,7 @@ GameObject:
   - component: {fileID: 975189862641102448}
   - component: {fileID: 7846628685148679618}
   - component: {fileID: 476822259549001896}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8865,7 +8870,7 @@ GameObject:
   - component: {fileID: 5224487322695381605}
   - component: {fileID: 1266377438962542278}
   - component: {fileID: 6425640431742555211}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube87
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9158,7 +9163,7 @@ GameObject:
   - component: {fileID: 8620424931903150367}
   - component: {fileID: 5294380565808866263}
   - component: {fileID: 5395132778105890128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9221,7 +9226,7 @@ GameObject:
   - component: {fileID: 3128962008781858715}
   - component: {fileID: 2326513535614702902}
   - component: {fileID: 5303279884323055282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9430,7 +9435,7 @@ GameObject:
   - component: {fileID: 2477900693033980173}
   - component: {fileID: 5862919975365440846}
   - component: {fileID: 3124959772766682392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10247,7 +10252,7 @@ GameObject:
   - component: {fileID: 787914653412171579}
   - component: {fileID: 7872581738432121571}
   - component: {fileID: 6477516619674520742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10352,7 +10357,7 @@ GameObject:
   - component: {fileID: 6028895721975812176}
   - component: {fileID: 5051187616453394437}
   - component: {fileID: 903404443917191197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube104
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10415,7 +10420,7 @@ GameObject:
   - component: {fileID: 544090319578221020}
   - component: {fileID: 1885740237252138830}
   - component: {fileID: 589716264735555278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10714,7 +10719,7 @@ GameObject:
   - component: {fileID: 2895504221512808797}
   - component: {fileID: 5327432828757509435}
   - component: {fileID: 4042205130806766391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10889,7 +10894,7 @@ GameObject:
   - component: {fileID: 3853868851473460807}
   - component: {fileID: 752447908887951848}
   - component: {fileID: 8337084583586850845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10907,7 +10912,7 @@ GameObject:
   - component: {fileID: 1660329967204956280}
   - component: {fileID: 4844491386943311346}
   - component: {fileID: 6863211379673004672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11443,7 +11448,7 @@ GameObject:
   - component: {fileID: 1262832946752084720}
   - component: {fileID: 4579027083520166831}
   - component: {fileID: 9067164794177773270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11742,7 +11747,7 @@ GameObject:
   - component: {fileID: 8247459095171333291}
   - component: {fileID: 2706432622645361716}
   - component: {fileID: 339000954716966821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11805,7 +11810,7 @@ GameObject:
   - component: {fileID: 3530274906028798860}
   - component: {fileID: 110697802264652250}
   - component: {fileID: 7598416571167101525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12130,7 +12135,7 @@ GameObject:
   - component: {fileID: 3061863201671652896}
   - component: {fileID: 3940280056405820398}
   - component: {fileID: 6431715539822620599}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube117
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12386,7 +12391,7 @@ GameObject:
   - component: {fileID: 7010000078815492165}
   - component: {fileID: 5230946612275996970}
   - component: {fileID: 8224868028929167652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12470,7 +12475,7 @@ GameObject:
   - component: {fileID: 3786837833301198548}
   - component: {fileID: 8353942745483173946}
   - component: {fileID: 4703054012223251727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12751,7 +12756,7 @@ GameObject:
   - component: {fileID: 2443995931369518873}
   - component: {fileID: 9123023016375231324}
   - component: {fileID: 2716854702732004495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12902,7 +12907,7 @@ GameObject:
   - component: {fileID: 2204948034815602205}
   - component: {fileID: 1846854753430175943}
   - component: {fileID: 4747519641703882888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12993,7 +12998,7 @@ GameObject:
   - component: {fileID: 8245831104872215124}
   - component: {fileID: 2534372903662683698}
   - component: {fileID: 5796841822496349100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13256,7 +13261,7 @@ GameObject:
   - component: {fileID: 903815917387089023}
   - component: {fileID: 1009932316905728054}
   - component: {fileID: 3598960145660479130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13615,7 +13620,7 @@ GameObject:
   - component: {fileID: 5704534265749240437}
   - component: {fileID: 4069705982934392954}
   - component: {fileID: 1550654276397652473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13823,7 +13828,7 @@ GameObject:
   - component: {fileID: 1468987501240054168}
   - component: {fileID: 6968729719911961117}
   - component: {fileID: 6577769423805503666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14305,7 +14310,7 @@ GameObject:
   - component: {fileID: 2035655072750413218}
   - component: {fileID: 5343546935321747508}
   - component: {fileID: 2766078593167942713}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14560,7 +14565,7 @@ GameObject:
   - component: {fileID: 1909805636491359493}
   - component: {fileID: 4383108701395584794}
   - component: {fileID: 2903566428808938935}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14578,7 +14583,7 @@ GameObject:
   - component: {fileID: 168776956967504014}
   - component: {fileID: 657831021449773544}
   - component: {fileID: 607007523684502790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14772,7 +14777,7 @@ GameObject:
   - component: {fileID: 2736596494381734638}
   - component: {fileID: 1794958668844874564}
   - component: {fileID: 2577811231291496518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube98
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14964,7 +14969,7 @@ GameObject:
   - component: {fileID: 815928913768786412}
   - component: {fileID: 2720363818781136397}
   - component: {fileID: 763056963019934892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube79
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15053,7 +15058,7 @@ GameObject:
   - component: {fileID: 3228528656808680031}
   - component: {fileID: 163337918194704538}
   - component: {fileID: 4727729917810744334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15187,7 +15192,7 @@ GameObject:
   - component: {fileID: 3677935247082338773}
   - component: {fileID: 3249067476570330026}
   - component: {fileID: 6882251111344599547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube118
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15383,7 +15388,7 @@ GameObject:
   - component: {fileID: 3950702884947252947}
   - component: {fileID: 4917971853292407316}
   - component: {fileID: 112849167167697527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube82
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15842,7 +15847,7 @@ GameObject:
   - component: {fileID: 7502079514119647709}
   - component: {fileID: 7149176106839360139}
   - component: {fileID: 8086354851503507978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube131
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15860,7 +15865,7 @@ GameObject:
   - component: {fileID: 8973434139209630025}
   - component: {fileID: 1989178220638578140}
   - component: {fileID: 6233831553038939201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube83
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15986,7 +15991,7 @@ GameObject:
   - component: {fileID: 146664566672208640}
   - component: {fileID: 6379357023993284942}
   - component: {fileID: 204408018894305392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube81
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16391,7 +16396,7 @@ GameObject:
   - component: {fileID: 8938968065994959095}
   - component: {fileID: 4193800492434143873}
   - component: {fileID: 3691735022805178508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16460,7 +16465,7 @@ GameObject:
   - component: {fileID: 2341418519897620985}
   - component: {fileID: 4198795976346038176}
   - component: {fileID: 8477203441407904149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16579,7 +16584,7 @@ GameObject:
   - component: {fileID: 8144663562909661209}
   - component: {fileID: 7784339974410535403}
   - component: {fileID: 3537678033946256595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16902,7 +16907,7 @@ GameObject:
   - component: {fileID: 8453442741519837691}
   - component: {fileID: 5389190595195985059}
   - component: {fileID: 3553213302149877561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube108
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16995,7 +17000,7 @@ GameObject:
   - component: {fileID: 5565398266803142491}
   - component: {fileID: 8730393883025019350}
   - component: {fileID: 8817184328566099273}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface81
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17594,7 +17599,7 @@ GameObject:
   - component: {fileID: 6731591541203438547}
   - component: {fileID: 5412282816971016771}
   - component: {fileID: 8713327230391683652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17612,7 +17617,7 @@ GameObject:
   - component: {fileID: 8280647948698055802}
   - component: {fileID: 996757926406570972}
   - component: {fileID: 3005949573534419071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17953,7 +17958,7 @@ GameObject:
   - component: {fileID: 2687043677015699392}
   - component: {fileID: 7598627348476837657}
   - component: {fileID: 3452793825723404765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18725,7 +18730,7 @@ GameObject:
   - component: {fileID: 4726654447389748824}
   - component: {fileID: 2031373666065773504}
   - component: {fileID: 3076265843348013650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube90
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19027,7 +19032,7 @@ GameObject:
   - component: {fileID: 8203148317152535239}
   - component: {fileID: 8833640931145432814}
   - component: {fileID: 7342922748762712704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19143,7 +19148,7 @@ GameObject:
   - component: {fileID: 6757632666872691240}
   - component: {fileID: 6755579475680339783}
   - component: {fileID: 8028550463659006185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface83
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19257,7 +19262,7 @@ GameObject:
   - component: {fileID: 6581479657867801812}
   - component: {fileID: 443586222594624004}
   - component: {fileID: 8793971502541182871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19409,7 +19414,7 @@ GameObject:
   - component: {fileID: 6864417813770241483}
   - component: {fileID: 8149619332069665446}
   - component: {fileID: 5504560739241944625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19878,7 +19883,7 @@ GameObject:
   - component: {fileID: 2267957955886730049}
   - component: {fileID: 7378221423669894373}
   - component: {fileID: 4697671739423468911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20556,7 +20561,7 @@ GameObject:
   - component: {fileID: 5896398700005827932}
   - component: {fileID: 5618746466030311567}
   - component: {fileID: 2972098836045605877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube106
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20715,7 +20720,7 @@ GameObject:
   - component: {fileID: 842467488283787088}
   - component: {fileID: 7309543612917568975}
   - component: {fileID: 694397205794434573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20836,7 +20841,7 @@ GameObject:
   - component: {fileID: 316809466590608918}
   - component: {fileID: 1296239926278804414}
   - component: {fileID: 6671850635392883725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20899,7 +20904,7 @@ GameObject:
   - component: {fileID: 3265748761263662242}
   - component: {fileID: 8649891519011483420}
   - component: {fileID: 2364621071155610438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface84
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21001,7 +21006,7 @@ GameObject:
   - component: {fileID: 5687152670480891754}
   - component: {fileID: 9190983677736043534}
   - component: {fileID: 3952090693229077134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube109
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21041,7 +21046,7 @@ GameObject:
   - component: {fileID: 3446542095516377033}
   - component: {fileID: 445625631685594535}
   - component: {fileID: 218217989204666805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21119,7 +21124,7 @@ GameObject:
   - component: {fileID: 8833936464155317698}
   - component: {fileID: 1764498085013560813}
   - component: {fileID: 3922279050305308923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube128
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21145,7 +21150,7 @@ GameObject:
   - component: {fileID: 2690629959590588052}
   - component: {fileID: 1562188892129302942}
   - component: {fileID: 6259834366967020787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube107
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21289,7 +21294,7 @@ GameObject:
   - component: {fileID: 2300580173616745601}
   - component: {fileID: 3089598753306234210}
   - component: {fileID: 4776260417496252724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface68
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21323,7 +21328,7 @@ GameObject:
   - component: {fileID: 9042771899096336491}
   - component: {fileID: 2634611831530356981}
   - component: {fileID: 6576862991644516347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube86
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21491,7 +21496,7 @@ GameObject:
   - component: {fileID: 4997610036882434545}
   - component: {fileID: 6264619706954671448}
   - component: {fileID: 3290901137234314790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21641,7 +21646,7 @@ GameObject:
   - component: {fileID: 1187647995128970091}
   - component: {fileID: 8350579277715994022}
   - component: {fileID: 1169556250757091991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22051,7 +22056,7 @@ GameObject:
   - component: {fileID: 1449075767451065305}
   - component: {fileID: 4634451016530340349}
   - component: {fileID: 6633387207941582626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube95
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22103,7 +22108,7 @@ GameObject:
   - component: {fileID: 8836607214083054046}
   - component: {fileID: 9130703893729154398}
   - component: {fileID: 3509000373504397166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22121,7 +22126,7 @@ GameObject:
   - component: {fileID: 4362143078748767495}
   - component: {fileID: 2431984846209296451}
   - component: {fileID: 6688901901755923968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube111
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22153,7 +22158,7 @@ GameObject:
   - component: {fileID: 8511771918138016412}
   - component: {fileID: 5760308388248005729}
   - component: {fileID: 5178013342425147977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube88
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22651,7 +22656,7 @@ GameObject:
   - component: {fileID: 2822103583276889049}
   - component: {fileID: 5729529164383927031}
   - component: {fileID: 3206888943378256781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube78
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22958,7 +22963,7 @@ GameObject:
   - component: {fileID: 7020421745256303674}
   - component: {fileID: 1280186220880609948}
   - component: {fileID: 229405187635815503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23081,7 +23086,7 @@ GameObject:
   - component: {fileID: 5132960665867039685}
   - component: {fileID: 3128133598491787276}
   - component: {fileID: 7556423868424369285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23136,7 +23141,7 @@ GameObject:
   - component: {fileID: 8860422415401877219}
   - component: {fileID: 6588921909904282927}
   - component: {fileID: 9177031416685730117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23597,7 +23602,7 @@ GameObject:
   - component: {fileID: 2283152507803622318}
   - component: {fileID: 2870295345574626242}
   - component: {fileID: 7438291738397191329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23773,7 +23778,7 @@ GameObject:
   - component: {fileID: 4506629398123949841}
   - component: {fileID: 65567570742746880}
   - component: {fileID: 7467520151871381135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23821,7 +23826,7 @@ GameObject:
   - component: {fileID: 1860257247219677050}
   - component: {fileID: 2032240264365136411}
   - component: {fileID: 9024125359800156569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24052,7 +24057,7 @@ GameObject:
   - component: {fileID: 8987148986372460067}
   - component: {fileID: 3535951919779454773}
   - component: {fileID: 7098464716819906706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24102,7 +24107,7 @@ GameObject:
   - component: {fileID: 2355751336966889600}
   - component: {fileID: 2423235559046462307}
   - component: {fileID: 8407996800643617648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24727,7 +24732,7 @@ GameObject:
   - component: {fileID: 5067334347125041374}
   - component: {fileID: 8338436096221220133}
   - component: {fileID: 7608662642710410784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube129
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24773,7 +24778,7 @@ GameObject:
   - component: {fileID: 8325745022990423419}
   - component: {fileID: 5633470015639853708}
   - component: {fileID: 116070448596812725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube134
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25023,7 +25028,7 @@ GameObject:
   - component: {fileID: 368533751773275152}
   - component: {fileID: 6291509344084634173}
   - component: {fileID: 4297996870224504435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25247,7 +25252,7 @@ GameObject:
   - component: {fileID: 938978234453013176}
   - component: {fileID: 781445670836398787}
   - component: {fileID: 3021590020050606567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25412,7 +25417,7 @@ GameObject:
   - component: {fileID: 7368310759365179417}
   - component: {fileID: 5486855793056684014}
   - component: {fileID: 6420182304806723666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25444,7 +25449,7 @@ GameObject:
   - component: {fileID: 2277399873403656906}
   - component: {fileID: 2546672834536694743}
   - component: {fileID: 3146460728474465922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface78
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25672,7 +25677,7 @@ GameObject:
   - component: {fileID: 8006235405061004735}
   - component: {fileID: 464805416816602494}
   - component: {fileID: 2314455874830564615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25690,7 +25695,7 @@ GameObject:
   - component: {fileID: 961033894165265422}
   - component: {fileID: 708183860740772859}
   - component: {fileID: 5279907299777697905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25716,7 +25721,7 @@ GameObject:
   - component: {fileID: 7423161750217122835}
   - component: {fileID: 4034496457367998025}
   - component: {fileID: 381987571015514643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube92
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26067,7 +26072,7 @@ GameObject:
   - component: {fileID: 7110774815488705600}
   - component: {fileID: 166730585850110330}
   - component: {fileID: 8702361640774732549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26219,7 +26224,7 @@ GameObject:
   - component: {fileID: 8686442580460228960}
   - component: {fileID: 8748234694190044942}
   - component: {fileID: 2052369392869988609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26567,7 +26572,7 @@ GameObject:
   - component: {fileID: 3404573121415006936}
   - component: {fileID: 4043588486684240340}
   - component: {fileID: 1208012366217174994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27078,7 +27083,7 @@ GameObject:
   - component: {fileID: 6323182983990174992}
   - component: {fileID: 5096631044909628988}
   - component: {fileID: 2175447781401648181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube77
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27300,7 +27305,7 @@ GameObject:
   - component: {fileID: 5593568365065117194}
   - component: {fileID: 4358978503002148685}
   - component: {fileID: 6016084659275691417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27318,7 +27323,7 @@ GameObject:
   - component: {fileID: 3710074336382509063}
   - component: {fileID: 7839924610919855413}
   - component: {fileID: 8918600193065486888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28444,7 +28449,7 @@ GameObject:
   - component: {fileID: 2224576764184518746}
   - component: {fileID: 4485617320959024599}
   - component: {fileID: 2567542399269720434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28535,7 +28540,7 @@ GameObject:
   - component: {fileID: 8671473414679328992}
   - component: {fileID: 3679683592992488735}
   - component: {fileID: 7593184467450640381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28561,7 +28566,7 @@ GameObject:
   - component: {fileID: 4923883932568333119}
   - component: {fileID: 5009624496530184978}
   - component: {fileID: 1578212611956119593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube97
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28642,7 +28647,7 @@ GameObject:
   - component: {fileID: 2710251635563502719}
   - component: {fileID: 475463358848068150}
   - component: {fileID: 5108752541339959622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28918,7 +28923,7 @@ GameObject:
   - component: {fileID: 803070879543216143}
   - component: {fileID: 7206224494523957859}
   - component: {fileID: 3832762851211099710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28973,7 +28978,7 @@ GameObject:
   - component: {fileID: 161817756354241905}
   - component: {fileID: 217024834180190462}
   - component: {fileID: 4002239719131356235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface79
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29084,7 +29089,7 @@ GameObject:
   - component: {fileID: 7881800379530788143}
   - component: {fileID: 1654609018250631467}
   - component: {fileID: 5147621147806641637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29116,7 +29121,7 @@ GameObject:
   - component: {fileID: 6011094150635767769}
   - component: {fileID: 1729163073054952755}
   - component: {fileID: 5020419172278431442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29166,7 +29171,7 @@ GameObject:
   - component: {fileID: 3219867378663450558}
   - component: {fileID: 2270627421417272179}
   - component: {fileID: 6064425080666655806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29321,7 +29326,7 @@ GameObject:
   - component: {fileID: 908135807677520553}
   - component: {fileID: 5665719014964234747}
   - component: {fileID: 6839895762301254033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube80
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29606,7 +29611,7 @@ GameObject:
   - component: {fileID: 2580446906223859765}
   - component: {fileID: 3659937355631912090}
   - component: {fileID: 847738700602400654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29646,7 +29651,7 @@ GameObject:
   - component: {fileID: 2797255164364598984}
   - component: {fileID: 2924217935096984176}
   - component: {fileID: 6198869015003365199}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29855,7 +29860,7 @@ GameObject:
   - component: {fileID: 9138842476253575061}
   - component: {fileID: 3887204485124903530}
   - component: {fileID: 8372794952662188845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface72
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29938,7 +29943,7 @@ GameObject:
   - component: {fileID: 3079072450938123127}
   - component: {fileID: 2517543102316768871}
   - component: {fileID: 738286066844819700}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30733,7 +30738,7 @@ GameObject:
   - component: {fileID: 4198924705435581051}
   - component: {fileID: 9064697928024001719}
   - component: {fileID: 7334438823923170435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface75
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30751,7 +30756,7 @@ GameObject:
   - component: {fileID: 5824299483105495189}
   - component: {fileID: 2049874428101755082}
   - component: {fileID: 1439166182674200865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30944,7 +30949,7 @@ GameObject:
   - component: {fileID: 926559623426267513}
   - component: {fileID: 7461687356320647783}
   - component: {fileID: 2109227526017515024}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31044,7 +31049,7 @@ GameObject:
   - component: {fileID: 8923261784714704558}
   - component: {fileID: 9157035714719612994}
   - component: {fileID: 7378857217477891370}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31583,7 +31588,7 @@ GameObject:
   - component: {fileID: 6231189137711114010}
   - component: {fileID: 4537764563320824834}
   - component: {fileID: 2295987760239671292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube127
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32040,7 +32045,7 @@ GameObject:
   - component: {fileID: 7675605152500824464}
   - component: {fileID: 4810478898701906157}
   - component: {fileID: 2944358133155924795}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32058,7 +32063,7 @@ GameObject:
   - component: {fileID: 735475630142391555}
   - component: {fileID: 6221028575868261000}
   - component: {fileID: 6120210242713351894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32137,7 +32142,7 @@ GameObject:
   - component: {fileID: 6642466387052628472}
   - component: {fileID: 6812498787724487852}
   - component: {fileID: 157145145804319326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube105
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32155,7 +32160,7 @@ GameObject:
   - component: {fileID: 8123700017186539933}
   - component: {fileID: 2228313832880949204}
   - component: {fileID: 1480566279003130140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube120
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32352,7 +32357,7 @@ GameObject:
   - component: {fileID: 636420987867259663}
   - component: {fileID: 5885756240509316057}
   - component: {fileID: 5661064115122515225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface88
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33048,7 +33053,7 @@ GameObject:
   - component: {fileID: 6236999141043831074}
   - component: {fileID: 6411642776727221747}
   - component: {fileID: 7294432687645171436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube89
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33139,7 +33144,7 @@ GameObject:
   - component: {fileID: 3180194074671278335}
   - component: {fileID: 76906598106737862}
   - component: {fileID: 4712777396432908439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube112
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33246,7 +33251,7 @@ GameObject:
   - component: {fileID: 8791158338461767764}
   - component: {fileID: 334327882721549900}
   - component: {fileID: 1329585254302601903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube115
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33481,7 +33486,7 @@ GameObject:
   - component: {fileID: 6129524923152152408}
   - component: {fileID: 7895817077702023500}
   - component: {fileID: 1716279273897414376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface82
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33499,7 +33504,7 @@ GameObject:
   - component: {fileID: 6284723209303857867}
   - component: {fileID: 7324821082306827910}
   - component: {fileID: 3266133750982428332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube130
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33738,7 +33743,7 @@ GameObject:
   - component: {fileID: 3236979769405741850}
   - component: {fileID: 402552777297746365}
   - component: {fileID: 6861853440585020647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34081,7 +34086,7 @@ GameObject:
   - component: {fileID: 544459447498258276}
   - component: {fileID: 2146215827750673376}
   - component: {fileID: 9062766013984627451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34185,7 +34190,7 @@ GameObject:
   - component: {fileID: 7006161850041815576}
   - component: {fileID: 1931983347029106951}
   - component: {fileID: 5535640032733706703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube84
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34221,7 +34226,7 @@ GameObject:
   - component: {fileID: 3221976461344382956}
   - component: {fileID: 3589784562336867528}
   - component: {fileID: 707932406253464747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube76
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34381,7 +34386,7 @@ GameObject:
   - component: {fileID: 7065795202746589107}
   - component: {fileID: 6863420091013309569}
   - component: {fileID: 5697697476261638895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube113
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34951,7 +34956,7 @@ GameObject:
   - component: {fileID: 5836442632551300090}
   - component: {fileID: 8897665803478239056}
   - component: {fileID: 3456782735846640456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35216,7 +35221,7 @@ GameObject:
   - component: {fileID: 6973394197724860022}
   - component: {fileID: 2762741578684406122}
   - component: {fileID: 3383185328717107899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35604,7 +35609,7 @@ GameObject:
   - component: {fileID: 4843452772284705782}
   - component: {fileID: 2496941008512271498}
   - component: {fileID: 8831339626924647176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35908,7 +35913,7 @@ GameObject:
   - component: {fileID: 3951410865659742387}
   - component: {fileID: 8721053170027154635}
   - component: {fileID: 5214677012565759865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36227,7 +36232,7 @@ GameObject:
   - component: {fileID: 2429962679472318469}
   - component: {fileID: 477372017544792501}
   - component: {fileID: 8024743888802741141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube70
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36245,7 +36250,7 @@ GameObject:
   - component: {fileID: 6024167887990800550}
   - component: {fileID: 90463722937947499}
   - component: {fileID: 7930225462958292399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36332,7 +36337,7 @@ GameObject:
   - component: {fileID: 4747946779851778417}
   - component: {fileID: 252684602680193676}
   - component: {fileID: 2579444785563950004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube74
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36648,7 +36653,7 @@ GameObject:
   - component: {fileID: 3762347775786631686}
   - component: {fileID: 6204557751497591120}
   - component: {fileID: 7368254051393122658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36734,7 +36739,7 @@ GameObject:
   - component: {fileID: 7042367513290078880}
   - component: {fileID: 4899962227588461659}
   - component: {fileID: 7845713710357184793}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36925,7 +36930,7 @@ GameObject:
   - component: {fileID: 6005002200126862204}
   - component: {fileID: 137590883348278118}
   - component: {fileID: 798804911611181293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube132
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37150,7 +37155,7 @@ GameObject:
   - component: {fileID: 4309318279099404458}
   - component: {fileID: 7428239582831110474}
   - component: {fileID: 5492785933505441020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube126
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37381,7 +37386,7 @@ GameObject:
   - component: {fileID: 6480554704638694653}
   - component: {fileID: 4506384724562329671}
   - component: {fileID: 5222613393133632280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube119
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37462,7 +37467,7 @@ GameObject:
   - component: {fileID: 2206156878537884493}
   - component: {fileID: 6128963052022302339}
   - component: {fileID: 6767271095832285909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube73
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37625,7 +37630,7 @@ GameObject:
   - component: {fileID: 5248958055885962627}
   - component: {fileID: 7616001402974731645}
   - component: {fileID: 219977822803764997}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37677,7 +37682,7 @@ GameObject:
   - component: {fileID: 9154388053929231608}
   - component: {fileID: 3927011574551507442}
   - component: {fileID: 164353606375080561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube125
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38009,7 +38014,7 @@ GameObject:
   - component: {fileID: 5579195830506331396}
   - component: {fileID: 8068450839049361472}
   - component: {fileID: 4867235715825677640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38045,7 +38050,7 @@ GameObject:
   - component: {fileID: 2216609569621989584}
   - component: {fileID: 2988784472953512070}
   - component: {fileID: 619140391870280333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:polySurface87
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38153,7 +38158,7 @@ GameObject:
   - component: {fileID: 6725993996443227986}
   - component: {fileID: 1600485468674629408}
   - component: {fileID: 6883793621035868946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube96
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38381,7 +38386,7 @@ GameObject:
   - component: {fileID: 6718144739272186433}
   - component: {fileID: 7344585685482210501}
   - component: {fileID: 4797838373143432957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39056,7 +39061,7 @@ GameObject:
   - component: {fileID: 5092050468739073555}
   - component: {fileID: 1659550837090115704}
   - component: {fileID: 3729214372246262633}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube94
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39244,7 +39249,7 @@ GameObject:
   - component: {fileID: 4391904428726048935}
   - component: {fileID: 3163008804347817645}
   - component: {fileID: 730702464259883367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube93
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39280,7 +39285,7 @@ GameObject:
   - component: {fileID: 8280454705793098067}
   - component: {fileID: 4012446751070912949}
   - component: {fileID: 8888190899121075715}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tempel_temploDoricoF1:pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
